@@ -248,7 +248,7 @@ const OCRStep=({onDataExtracted})=>{
             </div>
           ):(
             <label style={{display:"block",background:"#0A1020",border:`1px dashed ${C.border}`,borderRadius:12,padding:24,textAlign:"center",cursor:"pointer"}}>
-              <input type="file" accept="image/*" capture="environment" style={{display:"none"}} onChange={e=>scanLic(e.target.files[0])}/>
+              <input type="file" accept="image/*" style={{display:"none"}} onChange={e=>scanLic(e.target.files[0])}/>
               <div style={{fontSize:32,marginBottom:8}}>📸</div>
               <div style={{fontSize:14,color:C.muted}}>Take photo of licence</div>
               <div style={{fontSize:12,color:C.muted,marginTop:4}}>AI will auto-read your details</div>
